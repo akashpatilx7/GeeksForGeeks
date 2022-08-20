@@ -11,6 +11,8 @@ class Solution{
 public:
     long long maxPoint(int N, int K, long long A[], long long B[])
     {
+        /* How do I find the maximum value of a vector in C++?
+           int max=*max_element(cloud. begin(), cloud. end()); It will give you the maximum element in your vector "cloud". */
         long long maxPoints=0;
         for(int i=0;i<N;i++){
             long long points=(K/A[i])*B[i];
