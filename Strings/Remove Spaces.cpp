@@ -61,4 +61,15 @@ int main()
           The C++ getline() is an in-built function defined in the <string. h> header file that allows accepting and reading single and multiple line strings from the input stream. In C++, the cin object also allows input from the user, but not multi-word or multi-line input. That's where the getline() function comes in handy.
           
           How do I remove a character from a string in C++?
-          In C++ we can do this task very easily using erase() and remove() function. The remove function takes the starting and ending address of the string, and a character that will be removed. */
+          In C++ we can do this task very easily using erase() and remove() function. The remove function takes the starting and ending address of the string, and a character that will be removed.
+          
+          Can we pushback in string in C++?
+          std::string::push_back() in C++
+
+          The push_back() member function is provided to append characters. Appends character c to the end of the string, increasing its length by one. Syntax : void string:: push_back (char c) Parameters: Character which to be appended. 
+
+          Can you pop a string in C++?
+          C++ String pop_back()
+
+          This function is used to remove a last character of a string, decreasing its length by one. */
+
