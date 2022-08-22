@@ -1,0 +1,43 @@
+//{ Driver Code Starts
+#include<bits/stdc++.h>
+using namespace std;
+
+
+// } Driver Code Ends
+class Solution
+{
+    public:
+        string modify (string s)
+        {
+            vector<int> vid;
+            for (int i=0; i<s.length(); i++){
+                if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
+                    vid.push_back(i);
+                }
+            }
+            
+            int n = vid.size();
+            for(int i(0),j=n-1; i<n/2; i++,j--){
+                char temp = s[vid[i]];
+                s[vid[i]] = s[vid[j]];
+                s[vid[j]] = temp;
+              }
+             return s;
+        }
+};
+
+//{ Driver Code Starts.
+
+int main()
+{
+    int t; cin >> t;
+    while (t--)
+    {
+        string s; cin >> s;
+        Solution ob;
+        cout <<ob.modify (s) << endl;
+    }
+}
+// Contributed By: Pranay Bansal
+
+// } Driver Code Ends
