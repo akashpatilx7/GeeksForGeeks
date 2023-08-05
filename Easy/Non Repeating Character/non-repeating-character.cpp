@@ -12,7 +12,7 @@ class Solution
     char nonrepeatingCharacter(string S)
     {
        //Your code here
-       // Time Complexity : O(N) & Space Complexity : O(N)
+       // Time Complexity : O(N) & Space Complexity : O(1) as array has fixed elements=256
        
        int arr[256]={0};
        
